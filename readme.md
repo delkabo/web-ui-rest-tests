@@ -65,20 +65,11 @@ In this project, autotests are written in <code>Java</code> using <code>Selenide
 ### :robot: Running Tests Locally
 
 ```
-gradle clean -Ddevicehost=${DEVICEHOST} -Dtag={tag}
-```
-### :robot: Options for local test
-
-> DEVICEHOST =  web;
-> TAG = mobile, web
->
-> DEVICEHOST real, emulation, browserstack and TAG mobile for testing on mobile phone
-> DEVICEHOST web and TAG web for test on desktop browser
-
+gradle clean web_tests
 
 ### Command for browser tests on remote server
 ```
-gradle clean -DremoteDriverUrl=${REMOTEDRIVERURL} -Ddevicehost=${DEVICEHOST} -Dtag={tag}
+gradle clean web_tests -DremoteDriverUrl=${REMOTEDRIVERURL}
 ```
 ### WHERE
 ```

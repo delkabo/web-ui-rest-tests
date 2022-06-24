@@ -20,14 +20,7 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
-         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        switch (deviceHost) {
-            case "web":
-                BrowserWebDriver.configure();
-                break;
-            default:
-                throw new IllegalArgumentException("need choose deviceHost");
-        }
+        BrowserWebDriver.configure();
     }
 
     @BeforeEach
