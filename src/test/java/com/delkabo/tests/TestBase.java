@@ -1,5 +1,6 @@
 package com.delkabo.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.delkabo.helpers.Attach;
 import com.delkabo.drivers.web.BrowserWebDriver;
 import com.codeborne.selenide.Selenide;
@@ -20,6 +21,7 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         BrowserWebDriver.configure();
     }
 
