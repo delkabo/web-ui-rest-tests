@@ -66,6 +66,7 @@ In this project, autotests are written in <code>Java</code> using <code>Selenide
 
 ```
 gradle clean web_tests
+```
 
 ### Command for browser tests on remote server
 ```
@@ -94,6 +95,7 @@ test
 ```
 
 ### :robot: Build Options
+
 
 > <code>REMOTE_URL</code> – the address of the remote server where the tests will run.
 >
